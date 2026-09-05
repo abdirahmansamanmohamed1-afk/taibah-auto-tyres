@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taibah Auto Tyres</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- BUSINESS HEADER -->
+
+    <header>
+
+        <h1>TAIBAH AUTO TYRES</h1>
+
+        <p>DRIVE WITH CONFIDENCE</p>
+
+        <p>Phone: 0722334504 / 0724805585</p>
+
+    </header>
+
+
+    <!-- SALES SYSTEM -->
+
+    <main>
+
+        <h2>Tyre Sales System</h2>
+
+
+        <!-- CUSTOMER INFORMATION -->
+
+        <section>
+
+            <h3>Customer Information</h3>
+
+            <label for="customerName">
+                Customer Name:
+            </label>
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter customer name"
+            >
+
+
+            <br><br>
+
+
+            <label for="phone">
+                Phone Number:
+            </label>
+
+            <input
+                type="text"
+                id="phone"
+                placeholder="Enter phone number"
+            >
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- TYRE INFORMATION -->
+
+        <section>
+
+            <h3>Sell Tyre</h3>
+
+
+            <label for="tyreSize">
+                Tyre Size:
+            </label>
+
+            <select id="tyreSize">
+
+                <option value="8500">
+                    205/55R16
+                </option>
+
+                <option value="10000">
+                    215/60R16
+                </option>
+
+                <option value="12000">
+                    225/65R17
+                </option>
+
+                <option value="15000">
+                    235/65R17
+                </option>
+
+            </select>
+
+
+            <br><br>
+
+
+            <label for="quantity">
+                Quantity:
+            </label>
+
+            <input
+                type="number"
+                id="quantity"
+                value="1"
+                min="1"
+            >
+
+
+            <br><br>
+
+
+            <button id="addTyre">
+                Add Tyre
+            </button>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- CUSTOMER ORDER -->
+
+        <section>
+
+            <h3>Customer Order</h3>
+
+            
+            <div id="order">
+
+                <p>No tyres added yet.</p>
+
+            </div>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- DISCOUNT -->
+
+        <section>
+
+            <h3>Discount</h3>
+
+            <label for="discount">
+                Discount:
+            </label>
+
+            <input
+                type="number"
+                id="discount"
+                value="0"
+                min="0"
+            >
+
+        </section>
+
+
+        <br>
+
+<section>
+    <h3>Payment Method</h3>
+
+    <label for="paymentMethod">Choose Payment Method:</label>
+
+    <select id="paymentMethod">
+        <option value="Cash">Cash</option>
+        <option value="M-PESA">M-PESA</option>
+        <option value="Card">Card</option>
+    </select>
+</section>
+
+
+        <!-- CALCULATE -->
+
+        <button id="calculate">
+            Calculate Sale
+        </button>
+
+
+        <hr>
+
+        <button id="newSale">New Sale</button>
+
+        <hr>
+
+
+        <!-- RECEIPT -->
+
+        <section>
+
+            <h2>Receipt</h2>
+
+            <div id="receipt">
+
+                <p>No sale calculated yet.</p>
+
+            </div>
+
+
+            <br>
+
+
+            <button onclick="printReceipt()">
+                Print Receipt
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
